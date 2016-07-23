@@ -4,3 +4,52 @@
 // $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 // @import 'font-awesome';
 @import 'box-sizing';
+
+body {
+  margin: 0;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  color: white;
+  font-family: sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  background: #3a4ed2;
+}
+
+img {
+  margin-left: 1rem;
+}
+
+.title {
+  margin: 0 rem;
+  flex-grow: 1;
+}
+
+button {
+  padding: 1rem;
+  background: #1a2677;
+  font-size: inherit;
+  color: inherit;
+  border: none;
+  align-self: stretch;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  background: url('http://placecage.com/1000/1000') no-repeat center center;
+  background-size: cover;
+  text-align: center;
+}
+
+.content-title {
+}
