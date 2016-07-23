@@ -5,51 +5,51 @@
 // @import 'font-awesome';
 @import 'box-sizing';
 
+$light-blue: #118bc0;
+$dark-blue: #0070a4;
+$border-black: rgba(0, 0, 0, 0.5);
+
 body {
   margin: 0;
 }
+app {
+  border: 2px solid $border-black;
+}
 
-.app {
+.top-nav__left {
   display: flex;
-  flex-direction: column;
-  height: 100vh;
-  color: white;
-  font-family: sans-serif;
-}
-
-header {
-  display: flex;
-  align-items: center;
-  background: #3a4ed2;
-}
-
-img {
-  margin-left: 1rem;
-}
-
-.title {
-  margin: 0 rem;
   flex-grow: 1;
 }
-
-button {
-  padding: 1rem;
-  background: #1a2677;
-  font-size: inherit;
-  color: inherit;
-  border: none;
-  align-self: stretch;
+.top.nav__title {
+  background: $light-blue;
+  color: #fff;
 }
+.top-nav__right {
 
-.main-container {
+}
+.top-nav__btn {
+  background: $dark-blue;
+  color: #fff;
+}
+.hero {
+  width: 100%;
+  height: 100vh;
+}
+.container {
+  width: 100%;
+}
+.hero__contents {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-grow: 1;
-  background: url('http://placecage.com/1000/1000') no-repeat center center;
-  background-size: cover;
-  text-align: center;
-}
 
-.content-title {
+}
+.hero__text {
+  text-align: center;
+
+}
+.hero__action {
+  color: #fff;
+  background: $light-blue;
+  box-shadow: .2rem .2rem .2rem;
 }
