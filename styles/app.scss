@@ -12,44 +12,74 @@ $border-black: rgba(0, 0, 0, 0.5);
 body {
   margin: 0;
 }
-app {
-  border: 2px solid $border-black;
-}
 
-.top-nav__left {
+.app {
   display: flex;
-  flex-grow: 1;
-}
-.top.nav__title {
-  background: $light-blue;
-  color: #fff;
-}
-.top-nav__right {
-
-}
-.top-nav__btn {
-  background: $dark-blue;
-  color: #fff;
-}
-.hero {
-  width: 100%;
+  flex-direction: column;
   height: 100vh;
 }
+
 .container {
-  width: 100%;
+  max-width: 65rem;
+  margin: auto;
 }
-.hero__contents {
+
+.top-head {
+  background: $light-blue;
+  color: white;
+  padding: 0 1rem;
+}
+
+.top-nav {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 
+  &__title {
+    margin: 0;
+    img {
+      vertical-align: middle;
+    }
+  }
+
+  &__right {
+    background: $dark-blue;
+    padding: 1rem;
+    height: 100%;
+  }
+
+  &__btn {
+    height: 100%;
+    border: 0;
+
+    background: none;
+    color: inherit;
+    font-size: inherit;
+  }
 }
-.hero__text {
+
+.hero {
+  position: relative;
+  flex-grow: 1;
+  padding: 1rem;
+  background: #501842;
+  color: white;
   text-align: center;
 
-}
-.hero__action {
-  color: #fff;
-  background: $light-blue;
-  box-shadow: .2rem .2rem .2rem;
+  &__contents {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    padding: 1rem;
+    transform: translate(-50%, -50%);
+  }
+
+  &__action {
+    background: $dark-blue;
+    color: white;
+    padding: 1rem;
+    font-size: inherit;
+    border: 0.25rem solid $border-black;
+  }
 }
